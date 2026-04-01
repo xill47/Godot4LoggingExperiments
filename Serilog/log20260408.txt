@@ -1,0 +1,6 @@
+2026-04-08 01:52:34.462 +02:00 [ERR] An unhandled exception occured!
+System.Exception: This is an exception
+   at SerilogLogging.Root.ExceptionButtonOnPressed() in /home/xill47/Projects/Godot4LoggingExperiments/Serilog/Root.cs:line 29
+   at Godot.Callable.<From>g__Trampoline|1_0(Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret) in /build/source/modules/mono/glue/GodotSharp/GodotSharp/Core/Callable.generics.cs:line 39
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet) in /build/source/modules/mono/glue/GodotSharp/GodotSharp/Core/DelegateUtils.cs:line 86
+2026-04-08 01:52:38.268 +02:00 [WRN] This is a warning
