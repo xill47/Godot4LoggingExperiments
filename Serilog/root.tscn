@@ -34,7 +34,22 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Throw Exception"
 
-[node name="WarningButton" type="Button" parent="PanelContainer/MarginContainer/HFlowContainer"]
+[node name="SerilogWarningButton" type="Button" parent="PanelContainer/MarginContainer/HFlowContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "WarningButton"
+text = "Serilog Warning"
+
+[node name="SerilogErrorButton" type="Button" parent="PanelContainer/MarginContainer/HFlowContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Serilog Error"
+
+[node name="GodotWarningButton" type="Button" parent="PanelContainer/MarginContainer/HFlowContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Godot Warning"
+
+[node name="GodotErrorButton" type="Button" parent="PanelContainer/MarginContainer/HFlowContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Godot Error"

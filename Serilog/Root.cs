@@ -20,17 +20,10 @@ public partial class Root : Control
 
     public override void _Ready()
     {
-        ExceptionButton.Pressed += ExceptionButtonOnPressed;
-        WarningButton.Pressed += WarningButtonOnPressed;
-    }
-
-    private void ExceptionButtonOnPressed()
-    {
-        throw new Exception("This is an exception");
-    }
-
-    private void WarningButtonOnPressed()
-    {
-        logger.Warning("This is a warning");
+        ExceptionButton.Pressed += () => throw new Exception("This is an exception");
+        SerilogWarningButton.Pressed += () => logger.Warning("This is a warning");
+        SerilogErrorButton.Pressed += () => logger.Error("This is an error");
+        GodotWarningButton.Pressed += () => GD.PushWarning("This is a Godot warning");
+        GodotErrorButton.Pressed += () => GD.PushError("This is a Godot error");
     }
 }
